@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wagnersdoliveira.github.io/engaja-empresas-site/sitemap.xml

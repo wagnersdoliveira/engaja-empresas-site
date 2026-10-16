@@ -1,0 +1,28 @@
+ENGAJA EMPRESAS — SITE
+
+ARQUIVOS
+- index.html: conteúdo e estrutura da página
+- style.css: identidade visual, layout e responsividade
+- script.js: menu mobile, seleção de pacotes e formulário de contato
+- assets/engaja-logo.png: símbolo da marca usado no site e no ícone da aba
+- assets/social-card.png: imagem de compartilhamento para redes sociais
+- robots.txt e sitemap.xml: arquivos básicos para indexação
+
+PUBLICAÇÃO
+- Site: https://wagnersdoliveira.github.io/engaja-empresas-site/
+- Hospedagem: GitHub Pages, branch main, pasta raiz do repositório
+
+COMO TESTAR
+1. Extraia todos os arquivos para a pasta do projeto.
+2. Mantenha index.html, style.css e script.js na mesma pasta.
+3. Abra index.html no navegador ou use a extensão Live Server no VS Code.
+
+CONTATO POR WHATSAPP
+- O número comercial está configurado em script.js.
+- Antes de alterar ou publicar, confirme que continua correto.
+
+IMPORTANTE
+- Os preços estão visíveis no site conforme o planejamento atual.
+- Confirme entregáveis, limites, prazos e condições comerciais antes de publicar.
+- O site usa Google Fonts; essa fonte externa depende de conexão com a internet.
+- Não há envio de dados para um servidor: o formulário prepara uma mensagem para WhatsApp.
