@@ -60,5 +60,30 @@
 .contact-form input:focus,.contact-form select:focus,.contact-form textarea:focus{border-color:#8d6add;box-shadow:0 0 0 3px rgba(167,139,250,.17)}
 .contact-form .button{min-height:48px}
 .form-privacy{font-size:9px;line-height:1.6}
+.form-consent{display:flex;align-items:flex-start;gap:9px;margin:0 0 16px;color:#66717e;font-size:10px;line-height:1.55;cursor:pointer}
+.form-consent input{flex:0 0 auto;width:15px;height:15px;margin:1px 0 0;accent-color:#7451b5}
+.form-honeypot{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.contact-form button:disabled{opacity:.65;cursor:wait;transform:none}
+.form-feedback a{display:inline-block;margin-top:7px;color:#5b3b91;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.motion-feature{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:38px;margin-top:48px;padding:32px;border:1px solid #333b52;border-radius:12px;background:linear-gradient(130deg,#1c223a,#151a2f)}
+.motion-copy h3{max-width:470px;margin:14px 0;font-size:clamp(24px,3vw,36px);line-height:1.2;letter-spacing:-1.2px;color:#fff}
+.motion-copy h3 span{color:var(--accent)}
+.motion-copy p{max-width:480px;margin-bottom:24px;color:#b5bec9;font-size:13px;line-height:1.8}
+.motion-player{width:min(100%,280px);margin:0 auto;text-align:center}
+.motion-player video{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;border:1px solid #45405e;border-radius:10px;background:#11152a;box-shadow:0 20px 45px rgba(0,0,0,.22)}
+.motion-player figcaption{margin-top:12px;color:#aab4c0;font-size:8px;letter-spacing:1px}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s cubic-bezier(.2,.7,.2,1)}
+.reveal.is-visible{opacity:1;transform:translateY(0)}
+.service-card:nth-child(2),.price-card:nth-child(2){transition-delay:.08s}
+.service-card:nth-child(3),.price-card:nth-child(3){transition-delay:.16s}
+.service-card:nth-child(4),.price-card:nth-child(4){transition-delay:.24s}
+.orbit-one{animation:orbit-drift 24s ease-in-out infinite alternate}
+.orbit-two{animation:orbit-drift 28s ease-in-out infinite alternate-reverse}
+.card-top{animation:card-float 5s ease-in-out infinite}
+.card-bottom{animation:card-float 6s ease-in-out infinite reverse}
+@keyframes orbit-drift{from{transform:rotate(-24deg) scale(.98)}to{transform:rotate(-16deg) scale(1.04)}}
+@keyframes card-float{0%,100%{translate:0 0}50%{translate:0 -8px}}
 @media(max-width:1000px){.examples-grid{gap:12px}.example-art{min-height:250px;padding:16px}.example-copy{padding:17px}.example-copy h3{font-size:14px}}
 @media(max-width:700px){.hero-segments{gap:6px;margin-top:20px}.hero-segments span{font-size:8px;padding:6px 8px}.examples.section-pad{padding:70px 0}.examples-grid{grid-template-columns:1fr;gap:14px}.example-card{display:grid;grid-template-columns:.9fr 1.1fr;min-height:195px}.example-art{min-height:100%;padding:12px}.example-art:before{width:150px;height:150px}.example-art:after{width:200px;height:200px}.example-poster{min-height:155px;padding:15px 12px}.example-poster strong{font-size:clamp(17px,5vw,23px);margin:9px 0 12px}.example-poster small{font-size:6px}.example-poster>span{font-size:7px}.example-label{top:8px;left:8px;font-size:5px;padding:5px}.example-copy{align-self:center;padding:17px 14px}.example-copy>span{font-size:7px;letter-spacing:.8px}.example-copy h3{font-size:14px;line-height:1.35}.example-copy p{font-size:10px;line-height:1.6}.trust-points{gap:6px}.trust-points span{font-size:8px}.contact-form{padding:20px 16px}.form-fields{grid-template-columns:1fr;gap:0}.form-field-wide{grid-column:auto}.form-heading{margin-bottom:14px}.form-heading strong{font-size:15px}}
+@media(max-width:700px){.motion-feature{grid-template-columns:1fr;gap:24px;margin-top:30px;padding:23px 18px}.motion-player{width:min(100%,240px)}.motion-copy h3{font-size:28px}}
+@media(prefers-reduced-motion:reduce){.reveal,.reveal.is-visible,.orbit-one,.orbit-two,.card-top,.card-bottom{opacity:1;transform:none;translate:none;animation:none!important;transition:none!important}}

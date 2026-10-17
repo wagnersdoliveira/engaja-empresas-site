@@ -159,6 +159,21 @@
             <div class="example-copy"><span>CLÍNICAS VETERINÁRIAS</span><h3>Facilite o próximo passo do tutor</h3><p>Organize informações dos serviços e crie um caminho simples para tirar dúvidas e entrar em contato.</p></div>
           </article>
         </div>
+        <div class="motion-feature">
+          <div class="motion-copy">
+            <div class="eyebrow">CONTEÚDO EM MOVIMENTO</div>
+            <h3>Até uma ideia técnica pode ficar <span>fácil de acompanhar.</span></h3>
+            <p>Esta amostra de vídeo educativo mostra como roteiro, animação e design ajudam a explicar um assunto em poucos segundos. Um formato possível para apresentar serviços, produtos ou dicas da sua empresa.</p>
+            <a class="button button-primary" href="#contato" data-service="Conteúdo para redes sociais">Quero criar conteúdo assim <span aria-hidden="true">↗</span></a>
+          </div>
+          <figure class="motion-player">
+            <video controls playsinline preload="none" poster="assets/reel-computador-poster.png" aria-label="Vídeo educativo animado sobre o funcionamento de um computador">
+              <source src="assets/reel-computador.mp4" type="video/mp4">
+              Seu navegador não consegue reproduzir este vídeo.
+            </video>
+            <figcaption>AMOSTRA DE CONTEÚDO EDUCATIVO • TECNOLOGIA</figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 
@@ -242,24 +257,27 @@
           <div class="eyebrow eyebrow-dark">VAMOS TIRAR DO PAPEL?</div>
           <h2>Qual desafio você quer <span>resolver primeiro?</span></h2>
           <p>Conte um pouco sobre seu negócio. Vamos entender a necessidade e indicar um próximo passo possível, sem compromisso.</p>
-          <div class="contact-note"><span class="contact-note-icon">↗</span><span>O botão prepara sua mensagem e abre o WhatsApp. Você confere e envia por lá.</span></div>
+          <div class="contact-note"><span class="contact-note-icon">↗</span><span>Envie seus dados uma vez. A equipe recebe o pedido e retorna pelo WhatsApp.</span></div>
         </div>
         <form class="contact-form" id="contact-form">
-          <div class="form-heading"><strong>Vamos conversar</strong><span>Retorno pelo WhatsApp</span></div>
+          <div class="form-heading"><strong>Vamos conversar</strong><span>Resposta da equipe pelo WhatsApp</span></div>
           <div class="form-fields">
             <div class="form-field"><label for="name">Seu nome</label><input id="name" name="name" type="text" placeholder="Como podemos chamar você?" autocomplete="name" required></div>
             <div class="form-field"><label for="company">Seu negócio <span>(opcional)</span></label><input id="company" name="company" type="text" placeholder="Ex.: Barbearia do bairro" autocomplete="organization"></div>
+            <div class="form-field form-field-wide"><label for="phone">Seu WhatsApp</label><input id="phone" name="phone" type="tel" placeholder="(11) 99999-9999" autocomplete="tel" inputmode="tel" minlength="10" maxlength="20" required></div>
             <div class="form-field form-field-wide"><label for="interest">O que você procura?</label>
               <select id="interest" name="interest" required>
                 <option value="" disabled selected>Selecione uma opção</option>
-                <option>Diagnóstico Digital</option><option>Presença Digital</option><option>Conteúdo Mensal</option><option>Site Express</option><option>Identidade visual</option><option>Outro projeto</option>
+                <option>Diagnóstico Digital</option><option>Presença Digital</option><option>Conteúdo Mensal</option><option>Conteúdo para redes sociais</option><option>Site Express</option><option>Identidade visual</option><option>Outro projeto</option>
               </select>
             </div>
             <div class="form-field form-field-wide"><label for="message">Qual desafio quer resolver? <span>(opcional)</span></label><textarea id="message" name="message" rows="3" placeholder="Mais agendamentos, melhorar sua presença no Google..."></textarea></div>
           </div>
-          <button class="button button-primary button-full" type="submit">Continuar pelo WhatsApp <span>↗</span></button>
+          <div class="form-honeypot" aria-hidden="true"><label for="website">Deixe este campo vazio</label><input id="website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+          <label class="form-consent"><input name="consent" type="checkbox" required><span>Autorizo o uso destes dados pela Engaja Empresas para responder à minha solicitação. Quando o atendimento automático estiver ativo, meus dados serão encaminhados à equipe via Telegram.</span></label>
+          <button class="button button-primary button-full" type="submit">Enviar pedido <span>↗</span></button>
           <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
-          <small class="form-privacy">Seus dados serão usados apenas para preparar o contato solicitado.</small>
+          <small class="form-privacy">Seus dados serão usados apenas para este atendimento. Não armazenamos informações de pagamento neste formulário.</small>
         </form>
       </div>
     </section>

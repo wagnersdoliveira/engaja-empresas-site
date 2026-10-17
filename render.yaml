@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: engaja-leads-api
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: TELEGRAM_CHAT_ID
+        sync: false
+      - key: SITE_ORIGINS
+        value: https://wagnersdoliveira.github.io
