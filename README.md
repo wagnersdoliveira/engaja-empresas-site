@@ -14,7 +14,7 @@ Para editar, mantenha `index.html`, `style.css`, `script.js` e a pasta `assets/`
 O GitHub Pages publica apenas os arquivos estáticos do site. O token do bot nunca deve ser colocado no `script.js` nem em qualquer arquivo enviado ao GitHub. A API FastAPI fica separada em `backend/` e o arquivo `render.yaml` na raiz prepara o serviço no Render.
 
 1. Crie um bot com o `@BotFather` no Telegram e obtenha o token. Envie uma mensagem ao bot e descubra o ID do chat privado da equipe.
-2. Crie o serviço web no Render usando `render.yaml` e configure `TELEGRAM_BOT_TOKEN` e `TELEGRAM_CHAT_ID` como variáveis secretas no painel do serviço.
+2. Crie o serviço web no Render usando `render.yaml` e configure `TELEGRAM_BOT_TOKEN` e `TELEGRAM_CHAT_ID` como variáveis secretas no painel do serviço. Não use GitHub Pages para hospedar a API Python.
 3. Mantenha `SITE_ORIGINS` limitado à origem do site e acrescente `http://localhost:8000` apenas durante desenvolvimento local.
 4. Após o deploy, confirme que `https://SEU-SERVICO.onrender.com/health` retorna `{"status":"ok"}`.
 5. Em `script.js`, substitua o valor vazio de `LEADS_API_URL` pela URL HTTPS do serviço, sem barra no final.
